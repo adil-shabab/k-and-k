@@ -6,7 +6,7 @@
     --red: #D20a00;
     --white: rgb(255, 255, 255);
     --black: rgb(0, 0, 0);
-    --gray: rgb(209, 209, 209);
+    --gray: rgb(245, 245, 245);
     --body-font: 'Tenor Sans', sans-serif;
     --head-font: 'Zilla Slab', serif;
     --sm-shadow: rgba(0, 0, 0, 0.086) 0px 0px 0px 1px;
@@ -279,10 +279,26 @@ li{
 .about-us .left-box{
     display: flex;
     justify-content: center;
+    position: relative;
     align-items: center;
+}
+.about-us .left-box .arrow{
+    position: absolute;
+    bottom: -10%;
+    left: 10%;
 }
 .about-us .left-box img{
     max-height: 66vh;
+}
+.about-us .right-box{
+    position: relative;
+}
+.about-us .right-box .dots{
+    position: absolute;
+    bottom: -10%;
+    right: -20% ;
+    opacity: 0.6;
+    width: 120px;
 }
 .about-us .right-box .span{
     font-size: 19px;
@@ -314,7 +330,214 @@ li{
 
 
 
-/* why us section css start  */
+/* Featured section css start  */
+.featured-properties{
+    margin-top: 120px;
+    margin-bottom: 80px;
+    position: relative;
+}
+.featured-properties h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 42px;
+    font-family: var(--head-font);
+    margin-bottom: 80px;
+}
+.featured-properties h2 span{
+    color: var(--red);
+    font-family: var(--head-font);
+
+}
+.featured-properties .dots{
+    position: absolute;
+    width: 130px;
+    bottom: 15px;
+    left: -30px;
+}
+.featured-properties .panel .show-more-btn{
+    position: absolute;
+    top: -40px;
+    right: 20px;
+}
+.featured-properties a{
+    text-decoration: none;
+    color: var(--black);
+}
+.featured-properties a:hover{
+    color: black;
+}
+.featured-properties .buttons button{
+    color: var(--black);
+    background: var(--white);
+    border: none;
+    border: 2px solid var(--red);
+    outline: none;
+    padding: 5px 20px;
+    margin-right: 15px;
+}
+.featured-properties .buttons button.active{
+    background: var(--red);
+    color: var(--white);
+}
+.property-box .img-box{
+    position: relative;
+}
+.property-box .box h3{
+    font-size: 22px;
+    margin-top: 10px;
+    font-family: var(--head-font);
+}
+.property-box .box{
+    box-shadow: var(--sm-shadow);
+    padding: 12px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.property-box .box .circle{
+    position: absolute;
+    width: 20%;
+    height: 16%;
+    right: -15px;
+    border-radius: 50%;
+    bottom: -15px;
+    background: var(--gray);
+    transition: 0.8s ease;
+}
+.property-box .box:hover .circle{
+    border-radius: 1px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+}
+.property-box .box .ref-id{
+    position: absolute;
+    top: 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 14px;
+    right: 30px;
+    background-color: var(--white);
+    padding: 6px 15px;
+}
+.property-box .box .image{
+    border-radius: 10px;
+}
+.property-box .box .location{
+    margin-bottom: 10px;
+}
+.property-box .box .price{
+    font-size: 22px;
+}
+.property-box .box .icon{
+    width: 24px;
+    margin-right: 10px;
+    height: 24px;
+}
+.property-box .box .icon-box{
+    margin-right: 15px;
+    padding-right: 15px;
+}
+.property-box .box .txt-section{
+    padding: 15px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.toggle .panels .panel {
+    display: none;
+    position: relative;
+}
+.toggle .panels .panel:first-child {
+    display: flex;
+}
+
+/* owl css  */
+.img-box .owl-nav.disabled+.owl-dots{
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+.img-box .owl-dots .owl-dot.active span, .img-box .owl-dots .owl-dot:hover span {
+    background: var(--red) !important;
+}
+/* owl css end */
+
+
+/* slick css start  */
+.slick-prev, .slick-next{
+    bottom: -28px;
+    top: auto;
+    z-index: 11;
+}
+
+.slick-prev{
+    background-image: url("left-arrow.png");
+    background-size: contain;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px !important;
+    background-color: var(--red);
+    top: -30px;
+    height: 40px;
+    left: auto;
+    right: 90px;
+}
+.slick-next{
+    background-image: url("right-arrow.png");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    width: 40px !important;
+    background-position: center;
+    top: -30px;
+    background-color: var(--red);
+    padding: 10px;
+    height: 40px;
+    right: 40px;
+}
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before{
+    opacity: -1;
+}
+.slick-prev:hover, .slick-prev:focus{
+    background-image: url("left-arrow.png");
+    background-size: contain;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px !important;
+    background-color: var(--red);
+    top: -30px;
+    height: 40px;
+    left: auto;
+    right: 90px;
+}
+.slick-next:hover, .slick-next:focus{
+    background-image: url("right-arrow.png");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    width: 40px !important;
+    background-position: center;
+    top: -30px;
+    background-color: var(--red);
+    padding: 10px;
+    height: 40px;
+    right: 40px;
+}
+.slick-next::before {
+    opacity: -1;
+    display: none;
+}
+.slick-prev::before {
+    opacity: -1;
+    display: none;
+}
+/* slick css end  */
+
+/* Featured section css end  */
 
 
 
