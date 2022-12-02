@@ -915,68 +915,15 @@ footer .social-icons i:hover{
 
 
 
-/* cta section css start  */
-.cta-section{
-    margin-top: 120px;
-    margin-bottom: 10px;
-}
-.cta-section .container{
-    background-color: var(--gray);
-    border-radius: 25px;
-}
-.cta-section .left-box{
-    padding: 40px;
-}
-.cta-section .left-box img{
-    border-radius: 25px;
-}
-.cta-section .right-box{
-    background: var(--gray);
-    padding: 70px 30px;
-    height: 100%;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.cta-section .right-box h4{
-    font-size: 35px;
-    font-weight: bold;
-    font-family: var(--head-font);
-}
-.cta-section .right-box p{
-    margin-top: 20px;
-    margin-bottom: 35px;
-}
-.cta-section .right-box .email-box{
-    background: white;
-    width: fit-content;
-    padding: 8px 15px;
-}
-.cta-section .right-box .email-box i{
-    color: var(--red);
-    font-size: 18px;
-    margin-right: 20px;
-    margin-left: 10px;
-}
-.cta-section .right-box .email-box .button{
-    padding: 6px 20px;
-    margin-left: 15px;
-    margin-right:5px;
-}
-.cta-section .right-box .email-box input{
-    width: 200px;
-    border: none;
-    outline: none;
-}
-/* cta section css start  */
+
+
+
 
 /* service section css start  */
 .our-services .heading{
     font-size: 39px;
     font-family: var(--head-font);
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .our-services .heading span{
     color: var(--red);
@@ -1004,6 +951,11 @@ footer .social-icons i:hover{
 .our-services .box img{
     width: 65px;
 }
+@media screen and (max-width: 992px) {
+    .our-services .heading{
+        font-size: 30px;
+    }
+}
 /* service section css end  */
 
 
@@ -1019,7 +971,7 @@ footer .social-icons i:hover{
 .faq-section {
     background: #fdfdfd;
     min-height: 50vh;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 .faq-section .heading{
     font-size: 39px;
@@ -1112,6 +1064,14 @@ footer .social-icons i:hover{
 .faq .card .card-body p {
   margin-bottom: 14px;
 } 
+@media screen and (max-width: 992px) {
+    .faq-section .heading{
+        font-size: 30px;
+    }
+    .faq-section{
+        margin-top: 80px;
+    }
+}
 /* faq section css end */
 
 
@@ -1168,6 +1128,7 @@ footer .social-icons i:hover{
     flex-direction: column;
     border-radius: 8px;
     border: 1px solid rgb(231, 231, 231);
+    position: relative;
     margin-top: 35px;
 }
 .testimonial-section .right-box .name{
@@ -1195,6 +1156,38 @@ footer .social-icons i:hover{
     font-size: 17px;
     font-family: var(--head-font);
     font-weight: 500;
+}
+@media screen and (max-width: 992px) {
+    .testimonial-section{
+        margin-top: 60px;
+    }
+    .testimonial-section .left-box .quote{
+        width: 40px;
+        top: 80px;
+    }
+    .testimonial-section .left-box h3{
+        font-size: 28px;
+        width: 100%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .testimonial-section .left-box{
+        background: transparent;
+        padding: 10px ;
+        min-height: 15vh;
+    }
+    .testimonial-section .right-box{
+        margin-top: 45px;
+    }
+    .testimonial-section .testimonial-txt{
+       top: 10px;
+       right: 15px;
+    }
+    .testimonial-section .right-box .designation{
+        margin-top: 8px;
+        font-size: 17px;
+        font-family: var(--head-font);
+    }
 }
 
 
@@ -1266,8 +1259,121 @@ footer .social-icons i:hover{
     opacity: -1;
     display: none;
 }
+@media screen and (max-width: 992px) {
+    
+.testimonial-section .slick-prev{
+    bottom: 10px;
+    right: 60px;
+}
+.testimonial-section .slick-next{
+    bottom: 10px;
+    right: 20px;
+}
+.testimonial-section .slick-prev:hover, .slick-prev:focus{
+    bottom: 10px;
+    right: 60px;
+}
+.testimonial-section .slick-next:hover, .slick-next:focus{
+    bottom: 10px;
+    right: 20px;
+}
+}
 /* slick css end  */
 /* testimonial section css end */
+
+
+
+
+
+
+/* cta section css start  */
+.cta-section{
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+.cta-section .main-div{
+    background-color: var(--gray);
+    border-radius: 25px;
+}
+.cta-section .left-box{
+    padding: 40px;
+}
+.cta-section .left-box img{
+    border-radius: 25px;
+}
+.cta-section .right-box{
+    padding: 70px 30px;
+    height: 100%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cta-section .right-box h4{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: var(--head-font);
+}
+.cta-section .right-box p{
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.cta-section .right-box .email-box{
+    background: white;
+    width: fit-content;
+    padding: 8px 15px;
+}
+.cta-section .right-box .email-box i{
+    color: var(--red);
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.cta-section .right-box .email-box .button{
+    padding: 6px 20px;
+    margin-left: 15px;
+    margin-right:5px;
+}
+.cta-section .right-box .email-box input{
+    width: 200px;
+    border: none;
+    outline: none;
+}
+@media screen and (max-width: 992px) {
+    .cta-section{
+        margin-top: 70px;
+    }
+    .cta-section .left-box{
+        padding: 15px 25px;
+    }
+    .cta-section .right-box{
+        padding: 25px;
+    }
+    .cta-section .right-box h4{
+        font-size: 30px;
+    }
+    .cta-section .right-box h4 .cta-br{
+        display: none;
+    }
+    .cta-section .right-box .email-box{
+        width: 100%;
+    }
+    .cta-section .right-box .email-box .input{
+        width: 50%;
+    }
+    .cta-section .right-box .email-box i{
+        margin: 0;
+        width: 10%;
+    }
+    .cta-section .right-box .email-box .button{
+        margin: 0;
+        width: 35%;
+        padding: 5px 8px !important;
+    }
+}
+/* cta section css start  */
+
 
 
 
