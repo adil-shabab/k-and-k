@@ -10,6 +10,7 @@
     --body-font: 'Tenor Sans', sans-serif;
     --head-font: 'Zilla Slab', serif;
     --sm-shadow: rgba(0, 0, 0, 0.086) 0px 0px 0px 1px;
+    --shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     --md-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -182,13 +183,12 @@ li{
 
 
 
-
-
-
-
+/* --------------------------  home page section css end -----------------------------  */
 /* navbar css start  */
 .navbar .menu{
-    width: 23px;
+    width: 53px;
+    border: none;
+    outline: none;
 }
 .navbar{
     padding: 15px 0px !important;
@@ -572,6 +572,95 @@ li{
 
 
 
+/* price range modal css  */
+.price-wrapper,
+.wrapper{
+    width: 100%;
+}
+.price-input,
+.in-put{
+    width: 100%;
+    display: flex;
+    margin: 30px 0 35px;
+  }
+  .price-input .field,
+  .in-put .field{
+    display: flex;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+  }
+  .field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 19px;
+    margin-left: 12px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #999;
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .price-input .separator{
+    width: 130px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider{
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  .slider .progress{
+    height: 100%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background: #17A2B8;
+  }
+  .range-input{
+    position: relative;
+  }
+  .range-input input{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #17A2B8;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  }
+  input[type="range"]::-moz-range-thumb{
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  }
+
+
+
 
 
 /* footer css start  */
@@ -665,89 +754,260 @@ footer .social-icons i:hover{
 }
 /* footer css end */
 
+/* --------------------------  home page section css end -----------------------------  */
 
-.price-wrapper,
-.wrapper{
-    width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------  About page section css end -----------------------------  */
+
+
+/* about us section css start  */
+.about-us{
+    min-height: 80vh;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    max-height: auto;
 }
-.price-input,
-.in-put{
-    width: 100%;
+.about-us .left-box{
     display: flex;
-    margin: 30px 0 35px;
-  }
-  .price-input .field,
-  .in-put .field{
-    display: flex;
-    width: 100%;
-    height: 45px;
-    align-items: center;
-  }
-  .field input{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    font-size: 19px;
-    margin-left: 12px;
-    border-radius: 5px;
-    text-align: center;
-    border: 1px solid #999;
-    -moz-appearance: textfield;
-  }
-  input[type="number"]::-webkit-outer-spin-button,
-  input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
-  .price-input .separator{
-    width: 130px;
-    display: flex;
-    font-size: 19px;
-    align-items: center;
     justify-content: center;
-  }
-  .slider{
-    height: 5px;
     position: relative;
-    background: #ddd;
-    border-radius: 5px;
-  }
-  .slider .progress{
-    height: 100%;
-    left: 25%;
-    right: 25%;
+    align-items: center;
+}
+.about-us .right-box .arrow{
     position: absolute;
-    border-radius: 5px;
-    background: #17A2B8;
-  }
-  .range-input{
+    bottom: -5%;
+    right: 0px;
+    transform: rotate(256deg);
+}
+/* .about-us .left-box img{
+    max-height: 66vh;
+} */
+.about-us .right-box{
     position: relative;
-  }
-  .range-input input{
+}
+.about-us .right-box .dots{
     position: absolute;
-    width: 100%;
-    height: 5px;
-    top: -5px;
-    background: none;
-    pointer-events: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  input[type="range"]::-webkit-slider-thumb{
-    height: 17px;
-    width: 17px;
-    border-radius: 50%;
-    background: #17A2B8;
-    pointer-events: auto;
-    -webkit-appearance: none;
-    box-shadow: 0 0 6px rgba(0,0,0,0.05);
-  }
-  input[type="range"]::-moz-range-thumb{
-    height: 17px;
-    width: 17px;
-    border: none;
-    border-radius: 50%;
-    background: #17A2B8;
-    pointer-events: auto;
-    -moz-appearance: none;
-    box-shadow: 0 0 6px rgba(0,0,0,0.05);
-  }
+    bottom: -10%;
+    right: -20% ;
+    opacity: 0.6;
+    width: 120px;
+}
+.about-us .right-box .span{
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--red);
+}
+.about-us .right-box h2{
+    font-family: var(--head-font);
+    margin-top: 15px;
+    font-size: 39px;
+}
+.about-us .right-box .step span{
+    background: var(--red);
+    height: fit-content;
+    padding: 8px 15px;
+    color: var(--white);
+    margin-right: 25px;
+    border-radius: 4px;
+}
+.about-us .right-box .step h4{
+    font-size: 25px;
+    font-family: var(--head-font);
+}
+.about-us .right-box .step p{
+    font-size: 15px;
+}
+/* about us section css end */
+
+
+
+/* service section css start  */
+.our-services .heading{
+    font-size: 39px;
+    font-family: var(--head-font);
+    margin-bottom: 70px;
+}
+.our-services .heading span{
+    color: var(--red);
+    font-family: var(--head-font);
+}
+.our-services .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+    border-radius: 4px;
+    padding: 30px 15px;
+    flex-direction: column;
+}
+.our-services .box h4{
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: var(--head-font);
+}
+.our-services .box p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.our-services .box img{
+    width: 65px;
+}
+/* service section css end  */
+
+
+
+
+
+
+
+/* faq section css start  */
+
+
+
+.faq-section {
+    background: #fdfdfd;
+    min-height: 50vh;
+    margin-top: 120px;
+}
+.faq-section .heading{
+    font-size: 39px;
+    font-family: var(--head-font);
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.faq-section .heading span{
+    color: var(--red);
+    font-family: var(--head-font);
+}
+.faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+.faq {
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.faq .card {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #CEE1F8;
+}
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+    background: rgba(233, 30, 99, 0.1);
+    padding-left: 10px;
+}
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #3B566E;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  float: left;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background: var(--red);
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.faq .card .card-body {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6F8BA4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #F3F8FF;
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
+} 
+/* faq section css end */
+
+
+
+
+
+
+
+/* testimonial section css start  */
+.testimonial-section{
+    margin-top: 160px;
+}
+.testimonial-section .left-box{
+    position: relative;
+    background: var(--black);
+    min-height: 45vh;
+}
+.testimonial-section .left-box .dots{
+    position: absolute;
+}
+.testimonial-section .left-box .quote{
+    position: absolute;
+}
+.testimonial-section .left-box h3{
+    font-size: 39px;
+    font-family: var(--head-font);
+}
+/* testimonial section css end */
+
+
+
+
+
+/* --------------------------  About page section css start -----------------------------  */
