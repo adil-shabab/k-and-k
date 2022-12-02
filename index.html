@@ -37,9 +37,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#">Logo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <img src="menu.png" class="menu" alt="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -62,6 +60,33 @@
           </div>
         </div>
     </nav>
+
+
+
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <a href="">Logo</a>
+          <img src="x-mark.png" class="close" alt="" data-bs-dismiss="offcanvas" aria-label="Close">
+        </div>
+        <div class="offcanvas-body">
+          <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Buy</a></li>
+            <li><a href="">Rent</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+
+          <div class="social-media-icons">
+            <i class="fa-solid fa-brands fa-facebook"></i>
+            <i class="fa-solid fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-brands fa-whatsapp"></i>
+          </div>
+        </div>
+    </div>
   </header>
 
 
@@ -76,7 +101,7 @@
     <div class="hero-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 order-md-1 order-2">
                     <div class="left-box">
                         <img class="dots" src="gray-dots.png" alt="">
                         <h1>Find your dream property quickly and easily</h1>
@@ -88,11 +113,11 @@
                                 <option value="Rent">Rent</option>
                             </select>
                             <div id="r"></div>
-                            <div class="col-md-4" style="position: relative;">
+                            <div class="px-0 px-md-1 col-md-4" style="position: relative;">
                                 <input class="location-input" type="text" placeholder="Search By Location">
                                 <i class="location-icon fa-solid fa-location-crosshairs"></i>
                             </div>
-                            <div class="col-md-3">
+                            <div class="px-0 px-md-1 col-md-3">
                                 <select name="" id="">
                                     <option value="">Apartment</option>
                                     <option value="">House</option>
@@ -100,19 +125,19 @@
                                     <option value="">Office Space</option>
                                 </select>
                             </div>
-                            <div class="col-md-3">
+                            <div class="px-0 px-md-1 col-md-3">
                                 <div id="price_modal_btn" class="input" data-bs-toggle="modal" data-bs-target="#exampleModal">Price</div>
                             </div>
-                            <div id="ref-div" class="col-md-2 d-none">
+                            <div id="ref-div" class="px-0 px-md-1 col-md-2 col-6 d-none">
                                 <input class="" type="text" placeholder="Ref Id">
                             </div>
-                            <div id="bed-div" class="col-md-3 mt-3 d-none">
+                            <div id="bed-div" class="px-0 px-md-1 col-md-3 col-6 mt-md-3 d-none">
                                 <div id="bed_modal_btn" class="input" data-bs-toggle="modal" data-bs-target="#exampleModalthree">Bed | Bath</div>
                             </div>
-                            <div id="keyword-div" class="col-md-4 mt-3 d-none">
+                            <div id="keyword-div" class="px-0 px-md-1 col-md-4 col-6 mt-md-3 d-none">
                                 <input class="" type="text" placeholder="Keyword">
                             </div>
-                            <div id="area-div" class="col-md-3 mt-3 d-none">
+                            <div id="area-div" class="px-0 px-md-1 col-md-3 col-6 mt-md-3 d-none">
                                 <div id="area_modal_btn" class="input" data-bs-toggle="modal" data-bs-target="#exampleModaltwo">Area</div>
                             </div>
                             <div id="search-btn" class="col-md-2">
@@ -126,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 order-md-2 order-1">
                     <div class="right-box">
                         <img src="hero-img.png" alt="" class="hero-img img-fluid">
                         <img class="dots" src="gray-dots.png" alt="">
@@ -140,69 +165,18 @@
 
 
 
-    <!-- about us  -->
-    <div class="about-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="px-5 left-box">
-                        <img class="arrow" src="upward-arrow.png" alt="">
-                        <img src="https://img.freepik.com/free-photo/facade-modern-building-with-geometric-windows-curved-walls_181624-16998.jpg?w=740&t=st=1669808629~exp=1669809229~hmac=60ce1dd1e8044351bba62b1e299dd5397a616683a24c52dd7421847856ce332b" alt="" class="">
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="right-box">
-                        <img class="dots" src="gray-dots.png" alt="">
-                        <span class="span">Why Choose us ?</span>
-                        <h2>See How Simply We <br> Can Help You</h2>
-
-                        <div class="mt-5 step d-flex">
-                            <span>01</span>
-                            <div>
-                                <h4>Work with the best local agents</h4>
-                                <p>Lorem praesentium consequatur mollitia at, itaque odio ab, quisquam consectetur</p>
-                            </div>
-                        </div>
-                        <div class="mt-2 step d-flex">
-                            <span>02</span>
-                            <div>
-                                <h4>Work with the best local agents</h4>
-                                <p>Lorem praesentium consequatur mollitia at, itaque odio ab, quisquam consectetur</p>
-                            </div>
-                        </div>
-                        <div class="mt-2 step d-flex">
-                            <span>03</span>
-                            <div>
-                                <h4>Work with the best local agents</h4>
-                                <p>Lorem praesentium consequatur mollitia at, itaque odio ab, quisquam consectetur</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 
 
     <!-- Featured properties  -->
     <div class="featured-properties">
-        <h2>Recently Added <br> <span>Featured </span> Properties</h2>
         <img src="gray-dots.png" alt="" class="dots">
-        <div class="toggle container">
-            <div class="ms-lg-5 tabs buttons d-flex mb-3">
-                <button class="tab active">All</button>
-                <button class="tab">Buy</button>
-                <button class="tab">Rent</button>
-            </div>
-
-            <!-- all panel  -->
-            <div class="panels property-box">
-                <div class="featured-carousel panel row">
-
-
-                    <div class="col-md-4 mt-3 px-md-3">
+        <div class="container">
+            <button class="button show-more-btn">Show More</button>
+            <h4><span>Premium </span> Listing</h4>
+            <div class="property-box">
+                <div class="row">
+                    <div class="mb-3 col-sm-6 col-lg-4 col-12 px-md-3">
                         <a href="">
                             <div class="box mt-3">
                                 <div class="owl-carousel owl-theme img-box">
@@ -225,15 +199,91 @@
                                     <div class="mt-3 d-flex align-items-center">
                                         <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
                                             <img class="icon" src="double-bed.png" alt="">
-                                            <p class="m-0">2 Bed</p>
+                                            <p class="m-0">2</p>
                                         </div>
                                         <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
                                             <img class="icon" src="bathtub.png" alt="">
-                                            <p class="m-0">2 Bath</p>
+                                            <p class="m-0">2</p>
                                         </div>
                                         <div class="d-flex">
                                             <img class="icon" src="area.png" alt="">
-                                            <p class="m-0">56 Sqft</p>
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1001</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1001</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
                                         </div>
                                     </div>
                                 </div>
@@ -241,7 +291,7 @@
                         </a>
                     </div>
 
-                    <div class="col-md-4 mt-3 px-md-3">
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
                         <a href="">
                             <div class="box mt-3">
                                 <div class="owl-carousel owl-theme img-box">
@@ -264,15 +314,15 @@
                                     <div class="mt-3 d-flex align-items-center">
                                         <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
                                             <img class="icon" src="double-bed.png" alt="">
-                                            <p class="m-0">2 Bed</p>
+                                            <p class="m-0">2</p>
                                         </div>
                                         <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
                                             <img class="icon" src="bathtub.png" alt="">
-                                            <p class="m-0">2 Bath</p>
+                                            <p class="m-0">2</p>
                                         </div>
                                         <div class="d-flex">
                                             <img class="icon" src="area.png" alt="">
-                                            <p class="m-0">56 Sqft</p>
+                                            <p class="m-0">56</p>
                                         </div>
                                     </div>
                                 </div>
@@ -280,7 +330,7 @@
                         </a>
                     </div>
 
-                    <div class="col-md-4 mt-3 px-md-3">
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
                         <a href="">
                             <div class="box mt-3">
                                 <div class="owl-carousel owl-theme img-box">
@@ -303,15 +353,15 @@
                                     <div class="mt-3 d-flex align-items-center">
                                         <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
                                             <img class="icon" src="double-bed.png" alt="">
-                                            <p class="m-0">2 Bed</p>
+                                            <p class="m-0">2</p>
                                         </div>
                                         <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
                                             <img class="icon" src="bathtub.png" alt="">
-                                            <p class="m-0">2 Bath</p>
+                                            <p class="m-0">2</p>
                                         </div>
                                         <div class="d-flex">
                                             <img class="icon" src="area.png" alt="">
-                                            <p class="m-0">56 Sqft</p>
+                                            <p class="m-0">56</p>
                                         </div>
                                     </div>
                                 </div>
@@ -319,7 +369,7 @@
                         </a>
                     </div>
 
-                    <div class="col-md-4 mt-3 px-md-3">
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
                         <a href="">
                             <div class="box mt-3">
                                 <div class="owl-carousel owl-theme img-box">
@@ -342,281 +392,563 @@
                                     <div class="mt-3 d-flex align-items-center">
                                         <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
                                             <img class="icon" src="double-bed.png" alt="">
-                                            <p class="m-0">2 Bed</p>
+                                            <p class="m-0">2</p>
                                         </div>
                                         <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
                                             <img class="icon" src="bathtub.png" alt="">
-                                            <p class="m-0">2 Bath</p>
+                                            <p class="m-0">2</p>
                                         </div>
                                         <div class="d-flex">
                                             <img class="icon" src="area.png" alt="">
-                                            <p class="m-0">56 Sqft</p>
+                                            <p class="m-0">56</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
-                </div>
-
-
-
-
-
-                <!-- Buy panel -->
-                <div class="panel">
-                    <button class="button show-more-btn">Show More</button>
-                    <div class="row">
-                        <div class="col-md-4 mt-3 px-md-3">
-                            <a href="">
-                                <div class="box mt-3">
-                                    <div class="owl-carousel owl-theme img-box">
-                                        <div class="item">
-                                            <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
-                                        </div>
-                                        <div class="item">
-                                          <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
-                                        </div>
-                                        <div class="item">
-                                          <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
-                                        </div>
-                                    </div>
-                                    <span class="ref-id">KNK1002</span>
-                                    <span class="circle"></span>
-                                    <div class="txt-section">
-                                        <h3>Modern House With Modern Furniture</h3>
-                                        <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
-                                        <span class="price">500 AED</span>
-                                        <div class="mt-3 d-flex align-items-center">
-                                            <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
-                                                <img class="icon" src="double-bed.png" alt="">
-                                                <p class="m-0">2 Bed</p>
-                                            </div>
-                                            <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
-                                                <img class="icon" src="bathtub.png" alt="">
-                                                <p class="m-0">2 Bath</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <img class="icon" src="area.png" alt="">
-                                                <p class="m-0">56 Sqft</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="col-md-4 mt-3 px-md-3">
-                            <a href="">
-                                <div class="box mt-3">
-                                    <div class="owl-carousel owl-theme img-box">
-                                        <div class="item">
-                                            <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
-                                        </div>
-                                        <div class="item">
-                                          <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
-                                        </div>
-                                        <div class="item">
-                                          <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
-                                        </div>
-                                    </div>
-                                    <span class="ref-id">KNK1002</span>
-                                    <span class="circle"></span>
-                                    <div class="txt-section">
-                                        <h3>Modern House With Modern Furniture</h3>
-                                        <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
-                                        <span class="price">500 AED</span>
-                                        <div class="mt-3 d-flex align-items-center">
-                                            <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
-                                                <img class="icon" src="double-bed.png" alt="">
-                                                <p class="m-0">2 Bed</p>
-                                            </div>
-                                            <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
-                                                <img class="icon" src="bathtub.png" alt="">
-                                                <p class="m-0">2 Bath</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <img class="icon" src="area.png" alt="">
-                                                <p class="m-0">56 Sqft</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="col-md-4 mt-3 px-md-3">
-                            <a href="">
-                                <div class="box mt-3">
-                                    <div class="owl-carousel owl-theme img-box">
-                                        <div class="item">
-                                            <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
-                                        </div>
-                                        <div class="item">
-                                          <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
-                                        </div>
-                                        <div class="item">
-                                          <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
-                                        </div>
-                                    </div>
-                                    <span class="ref-id">KNK1002</span>
-                                    <span class="circle"></span>
-                                    <div class="txt-section">
-                                        <h3>Modern House With Modern Furniture</h3>
-                                        <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
-                                        <span class="price">500 AED</span>
-                                        <div class="mt-3 d-flex align-items-center">
-                                            <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
-                                                <img class="icon" src="double-bed.png" alt="">
-                                                <p class="m-0">2 Bed</p>
-                                            </div>
-                                            <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
-                                                <img class="icon" src="bathtub.png" alt="">
-                                                <p class="m-0">2 Bath</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <img class="icon" src="area.png" alt="">
-                                                <p class="m-0">56 Sqft</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-                
-                <!-- rent panel -->
-                <div class="panel">
-                    <button class="button show-more-btn">Show More</button>
-                    <div class="row">
-                        <div class="col-md-4 mt-3 px-md-3">
-                            <a href="">
-                                <div class="box mt-3">
-                                    <div class="owl-carousel owl-theme img-box">
-                                        <div class="item">
-                                            <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
-                                        </div>
-                                        <div class="item">
-                                          <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
-                                        </div>
-                                        <div class="item">
-                                          <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
-                                        </div>
-                                    </div>
-                                    <span class="ref-id">KNK1002</span>
-                                    <span class="circle"></span>
-                                    <div class="txt-section">
-                                        <h3>Modern House With Modern Furniture</h3>
-                                        <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
-                                        <span class="price">500 AED</span>
-                                        <div class="mt-3 d-flex align-items-center">
-                                            <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
-                                                <img class="icon" src="double-bed.png" alt="">
-                                                <p class="m-0">2 Bed</p>
-                                            </div>
-                                            <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
-                                                <img class="icon" src="bathtub.png" alt="">
-                                                <p class="m-0">2 Bath</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <img class="icon" src="area.png" alt="">
-                                                <p class="m-0">56 Sqft</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="col-md-4 mt-3 px-md-3">
-                            <a href="">
-                                <div class="box mt-3">
-                                    <div class="owl-carousel owl-theme img-box">
-                                        <div class="item">
-                                            <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
-                                        </div>
-                                        <div class="item">
-                                          <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
-                                        </div>
-                                        <div class="item">
-                                          <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
-                                        </div>
-                                    </div>
-                                    <span class="ref-id">KNK1002</span>
-                                    <span class="circle"></span>
-                                    <div class="txt-section">
-                                        <h3>Modern House With Modern Furniture</h3>
-                                        <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
-                                        <span class="price">500 AED</span>
-                                        <div class="mt-3 d-flex align-items-center">
-                                            <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
-                                                <img class="icon" src="double-bed.png" alt="">
-                                                <p class="m-0">2 Bed</p>
-                                            </div>
-                                            <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
-                                                <img class="icon" src="bathtub.png" alt="">
-                                                <p class="m-0">2 Bath</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <img class="icon" src="area.png" alt="">
-                                                <p class="m-0">56 Sqft</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="col-md-4 mt-3 px-md-3">
-                            <a href="">
-                                <div class="box mt-3">
-                                    <div class="owl-carousel owl-theme img-box">
-                                        <div class="item">
-                                            <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
-                                        </div>
-                                        <div class="item">
-                                          <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
-                                        </div>
-                                        <div class="item">
-                                          <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
-                                        </div>
-                                    </div>
-                                    <span class="ref-id">KNK1002</span>
-                                    <span class="circle"></span>
-                                    <div class="txt-section">
-                                        <h3>Modern House With Modern Furniture</h3>
-                                        <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
-                                        <span class="price">500 AED</span>
-                                        <div class="mt-3 d-flex align-items-center">
-                                            <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
-                                                <img class="icon" src="double-bed.png" alt="">
-                                                <p class="m-0">2 Bed</p>
-                                            </div>
-                                            <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
-                                                <img class="icon" src="bathtub.png" alt="">
-                                                <p class="m-0">2 Bath</p>
-                                            </div>
-                                            <div class="d-flex">
-                                                <img class="icon" src="area.png" alt="">
-                                                <p class="m-0">56 Sqft</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                
+                </div>                
             </div>
         </div>
     </div>
+
+    <div class="mb-5 flex-container ad-one container">
+        <div>
+            <a href="">
+                <img src="ad-1.jpeg" class="img-fluid" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Featured properties  -->
+    <div class="featured-properties">
+        <img src="gray-dots.png" alt="" class="dots">
+        <div class="container">
+            <button class="button show-more-btn">Show More</button>
+            <h4><span>Featured </span> Listing</h4>
+            <div class="property-box">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1001</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1001</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1001</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1002</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1002</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1002</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mb-5 flex-container ad-one container">
+        <div class="px-md-3">
+            <a href="">
+                <img src="https://img.freepik.com/free-photo/dining-area-comfortable-studio-flat-hotel-room_1262-12324.jpg?w=996&t=st=1669890290~exp=1669890890~hmac=069490632d2d857410b35e2850a7ead0bb90165a76877e067cc885628c8630e4" class="img-fluid" alt="">
+            </a>
+        </div>
+        <div class="px-md-3">
+            <a href="">
+                <img src="https://img.freepik.com/free-photo/interior-living-room-with-sofa-empty-dark-blue-wall-3d-rendering_41470-3621.jpg?w=996&t=st=1669890343~exp=1669890943~hmac=252654125f8081dcd51a3d72f92a5849f5e5642244183a2a2c4b00a476e7f304" class="img-fluid" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Featured properties  -->
+    <div class="featured-properties">
+        <img src="gray-dots.png" alt="" class="dots">
+        <div class="container">
+            <button class="button show-more-btn">Show More</button>
+            <h4><span>Standard </span> Listing</h4>
+            <div class="property-box">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1001</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1001</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1001</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1002</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1002</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4 col-12 px-md-3">
+                        <a href="">
+                            <div class="box mt-3">
+                                <div class="owl-carousel owl-theme img-box">
+                                    <div class="item">
+                                        <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/modern-luxury-bedroom-suite-bathroom_105762-1791.jpg?t=st=1669873494~exp=1669874094~hmac=6b6b2c721a926ffc58a19a70ca9e7752f611a597c95c3a4c3b2505be2c53c8a1" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/free-photo/interior-shot-modern-kitchen-with-decorations-furniture-entrance_181624-60983.jpg?w=996&t=st=1669869993~exp=1669870593~hmac=5c895b2522828baf48550255053a606c0af498101aa0b31f6ee1559704b81c04" alt="">    
+                                    </div>
+                                    <div class="item">
+                                      <img class="img-fluid w-100 property-img" src="https://img.freepik.com/premium-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2191.jpg?w=996" alt="">    
+                                    </div>
+                                </div>
+                                <span class="ref-id">KNK1002</span>
+                                <span class="circle"></span>
+                                <div class="txt-section">
+                                    <h3>Modern House With Modern Furniture</h3>
+                                    <p class="location"><i class="fa-solid fa-location-crosshairs"></i> Padikkal, Moonniyur, Kerala</p>
+                                    <span class="price">500 AED</span>
+                                    <div class="mt-3 d-flex align-items-center">
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="double-bed.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex icon-box" style="border-right: 1px solid var(--red);">
+                                            <img class="icon" src="bathtub.png" alt="">
+                                            <p class="m-0">2</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img class="icon" src="area.png" alt="">
+                                            <p class="m-0">56</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mb-5 flex-container container">
+        <div class="px-md-3">
+            <a href="">
+                <img src="https://img.freepik.com/free-photo/old-buildings-gardens-nesebar-bulgaria_627829-14114.jpg?w=996&t=st=1669890603~exp=1669891203~hmac=cd1648fcb1dd1c429506eedfd58bcbfaa4499f50738832d0829351c2a6ea4931" class="img-fluid" alt="">
+            </a>
+        </div>
+        <div class="px-md-3">
+            <a href="">
+                <img src="https://img.freepik.com/free-photo/empty-floor-front-modern-building_1127-3154.jpg?w=996&t=st=1669890571~exp=1669891171~hmac=352d72d9b01fd63f4c82c4bfb72d6cdd032d8b857cab0f127c38dd29edf1aaeb" class="img-fluid" alt="">
+            </a>
+        </div>
+        <div class="px-md-3">
+            <a href="">
+                <img src="https://img.freepik.com/free-photo/living-room-interior-wall-warm-tones-gray-armchair-with-wood-cabinet-3d-rendering_41470-3656.jpg?w=900&t=st=1669890808~exp=1669891408~hmac=db4d0879b22f673c55605f23c17bf0f952f213dd7691b1ed2b1d2dddce0fbca7" class="img-fluid" alt="">
+            </a>
+        </div>
+    </div>
+
+
+
+
+
   </main>
 
 
@@ -626,6 +958,56 @@
 
   <footer>
     <!-- place footer here -->
+    <div class="container">
+        <div class="row">
+            <div class="px-lg-2 col-lg-4 col-12">
+                <img src="https://rightmovebh.com/static/img/logo.png" alt="" class="logo">
+                <p class="description">Lorem ipsum dolor sit adipisicing elit. Velit maxime vitae ipsum amet libero placeat quis aliquid qui consequuntur!</p>
+                <div class="social-icons d-flex">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="px-lg-3 col-lg-2 col-12">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-arrow-right"></i> Home</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-right"></i> About</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-right"></i> Buy</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-right"></i> Rent</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-right"></i> Premium</a></li>
+                </ul>
+            </div>
+            <div class="px-lg-3 col-lg-3 col-12">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-arrow-right"></i> Standard</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-right"></i> Featured</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-right"></i> International</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-right"></i> Privacy & Policy</a></li>
+                    <li><a href=""><i class="fa-solid fa-arrow-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-12">
+                <h4>Contact Us</h4>
+                <div class="mb-3 d-flex location">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p>KNK Properties, <br> Building #1307 <br> Road #533 Block #905 <br> Riffa - Kingdom of Bahrain</p>
+                </div>
+                <div class="mb-3 d-flex call">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+91 66706100</p>
+                </div>
+                <div class="mb-3 d-flex mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>knkproperties@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center mt-3 mb-0">©️ KNK Properties. All Rights Deserved | Designed by <a href="https://mentegoz.com">Mentegoz</a></p>
   </footer>
 
 
