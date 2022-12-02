@@ -795,9 +795,6 @@ footer .social-icons i:hover{
     right: 0px;
     transform: rotate(256deg);
 }
-/* .about-us .left-box img{
-    max-height: 66vh;
-} */
 .about-us .right-box{
     position: relative;
 }
@@ -833,9 +830,147 @@ footer .social-icons i:hover{
 .about-us .right-box .step p{
     font-size: 15px;
 }
+.about-us .left-box .arrow{
+    display: none;
+}
+@media screen and (max-width: 992px) {
+    .about-us{
+        margin-top: 35px;
+    }
+    .about-us .right-box{
+        margin-top: 75px;
+    }
+    .about-us .right-box h2{
+        font-size: 34px;
+    }
+    .about-us .right-box .step h4{
+        font-size: 24px;
+    }
+    .about-us .right-box .arrow{
+        display: none;
+    }
+    .about-us .left-box .arrow{
+        position: absolute;
+        display: block;
+        bottom: -40px;
+        left: 0px;
+    }
+}
 /* about us section css end */
 
 
+
+
+/* why us css start  */
+.why-us{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.why-us .heading{
+    font-size: 39px;
+    font-family: var(--head-font);
+    margin-bottom: 60px;
+    position: relative;
+}
+.why-us .heading::after{
+    content: '';
+    border-bottom: 2px solid var(--red);
+    display: block;
+    width: 15%;
+    margin-top: 20px;
+}
+.why-us .heading span{
+    color: var(--red);
+    font-family: var(--head-font);
+}
+.why-us .box h6{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--head-font);
+}
+.why-us .box img{
+    width: 28px;
+    margin-right: 15px;
+}
+.why-us .box .description{
+    font-size: 15px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 992px) {
+    .why-us{
+        margin-top: 75px;
+        margin-bottom: 70px;
+    }
+    .why-us .heading{
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .why-us .heading::after{
+        width: 25%;
+    }
+    
+}
+/* why us css end  */
+
+
+
+
+/* cta section css start  */
+.cta-section{
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+.cta-section .container{
+    background-color: var(--gray);
+    border-radius: 25px;
+}
+.cta-section .left-box{
+    padding: 40px;
+}
+.cta-section .left-box img{
+    border-radius: 25px;
+}
+.cta-section .right-box{
+    background: var(--gray);
+    padding: 70px 30px;
+    height: 100%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cta-section .right-box h4{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: var(--head-font);
+}
+.cta-section .right-box p{
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.cta-section .right-box .email-box{
+    background: white;
+    width: fit-content;
+    padding: 8px 15px;
+}
+.cta-section .right-box .email-box i{
+    color: var(--red);
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.cta-section .right-box .email-box .button{
+    padding: 6px 20px;
+    margin-left: 15px;
+    margin-right:5px;
+}
+.cta-section .right-box .email-box input{
+    width: 200px;
+    border: none;
+    outline: none;
+}
+/* cta section css start  */
 
 /* service section css start  */
 .our-services .heading{
@@ -991,19 +1126,147 @@ footer .social-icons i:hover{
 }
 .testimonial-section .left-box{
     position: relative;
-    background: var(--black);
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    padding: 10px 75px;
     min-height: 45vh;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 .testimonial-section .left-box .dots{
     position: absolute;
+    width: 120px;
+    top: 50%;
+    transform: translate(0px, -20%);
+    left: 18%;
+    opacity: 0.4;
 }
 .testimonial-section .left-box .quote{
     position: absolute;
+    left: 15%;
+    top: 15%;
 }
 .testimonial-section .left-box h3{
-    font-size: 39px;
+    font-size: 42px;
+    font-family: var(--head-font);
+    width: 80%;
+    margin-left: 35%;
+    font-weight: bold;
+}
+.testimonial-section .right-box .profile-pic{
+    width:42px;
+    border-radius: 50%;
+    height: 42px;
+}
+.testimonial-section .right-box{
+    padding: 25px 30px;
+    background: rgb(249, 249, 249);
+    min-height: 45vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid rgb(231, 231, 231);
+    margin-top: 35px;
+}
+.testimonial-section .right-box .name{
+    font-family: var(--head-font);
+    font-weight: bold;
+    font-size: 18px;
+}
+.testimonial-section .right-box .description{
+    margin-top: 30px;
+    font-size: 15px;
+}
+.testimonial-section .right-box .star{
+    color: goldenrod;
+    font-size: 17px;
+    margin-right: 5px;
+}
+.testimonial-section .right-box .designation{
+    margin-top: 28px;
+    font-size: 19px;
     font-family: var(--head-font);
 }
+.testimonial-section .testimonial-txt{
+    position: absolute;
+    right: 8%;
+    font-size: 17px;
+    font-family: var(--head-font);
+    font-weight: 500;
+}
+
+
+/* slick css start  */
+.testimonial-section .slick-prev, .slick-next{
+    bottom: -28px;
+    top: auto;
+    z-index: 11;
+}
+
+.testimonial-section .slick-prev{
+    background-image: url("left-arrow.png");
+    background-size: contain;
+    background-size: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px !important;
+    background-color: var(--red);
+    bottom: 15px;
+    height: 30px;
+    left: auto;
+    right: 80px;
+}
+.testimonial-section .slick-next{
+    background-image: url("right-arrow.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    width: 30px !important;
+    background-position: center;
+    bottom: 15px;
+    background-color: var(--red);
+    padding: 10px;
+    height: 30px;
+    right: 40px;
+}
+.testimonial-section .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before{
+    opacity: -1;
+}
+.testimonial-section .slick-prev:hover, .slick-prev:focus{
+    background-image: url("left-arrow.png");
+    background-size: contain;
+    background-size: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px !important;
+    background-color: var(--red);
+    bottom: 15px;
+    height: 30px;
+    left: auto;
+    right: 80px;
+}
+.testimonial-section .slick-next:hover, .slick-next:focus{
+    background-image: url("right-arrow.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    width: 30px !important;
+    background-position: center;
+    bottom: 15px;
+    background-color: var(--red);
+    padding: 10px;
+    height: 30px;
+    right: 40px;
+}
+.testimonial-section .slick-next::before {
+    opacity: -1;
+    display: none;
+}
+.testimonial-section .slick-prev::before {
+    opacity: -1;
+    display: none;
+}
+/* slick css end  */
 /* testimonial section css end */
 
 
