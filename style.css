@@ -1461,13 +1461,42 @@ footer .social-icons i:hover{
 .contact-section .right-box .map{
     font-weight: bold;
 }
-
+@media screen and (max-width: 992px) {
+    .contact-section .left-box{
+        margin-top: 45px;
+        padding: 20px;
+    }
+    .contact-section .left-box .star{
+        top: 130px;
+        right: 0px;
+    }
+    .contact-section .left-box .btn-div{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .contact-section .right-box{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .contact-section .left-box h1{
+        font-size: 55px;
+    }
+    .contact-section .left-box{
+        padding: 10px;
+    }
+    .contact-section .right-box{
+        padding: 25px;
+    }
+}
 
 
 
 
 .sm-section{
     margin-top: 50px;
+    max-width: 100%;
+    overflow: hidden;
     margin-bottom: 20px;
 }
 .sm-section h4{
@@ -1504,6 +1533,58 @@ footer .social-icons i:hover{
 .sm-section .right-box .box p{
     font-size: 17px;
     margin-top: 8px;
+    text-align: center;
 }
+.sm-section .left-box img.mobile{
+    display: none;
+}
+.sm-section .sm-br{
+    display: none;
+}
+@media screen and (max-width: 992px) {
+    .sm-section .left-box,
+    .sm-section .right-box{
+        padding: 10px 15px;
+    }
+    .sm-section .left-box img.desktop{
+        display: none;
+    }
+    .sm-section .left-box img.mobile{
+        display: block;
+    }
+    .sm-section .right-box .second-box{
+        border: none;
+    }
+}
+@media screen and (max-width: 580px) {
+    .sm-section h4{
+        font-size: 20px;
+    }
+    .sm-section .right-box .box p{
+        font-size: 16px;
+    }
+    .sm-section h4::before{
+        content: '';
+        display: none;
+    }
+    .sm-section h4::after{
+        width: 100%;
+    }
+    .sm-section .left-box .mobile  {
+        width: 78px !important;
+        transform: rotate(45deg);
+        margin-top: -45px;
+    }
+    .sm-section .left-box .img-section{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .sm-section .sm-br{
+        display: block;
+    }
+}
+
+
+
 
 /* --------------------------------- contact section css end ---------------------------------- */
