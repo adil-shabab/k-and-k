@@ -744,6 +744,7 @@ footer .social-icons i:hover{
 @media screen and (max-width: 992px) {
     footer h4{
         margin-top: 35px;
+        font-size: 24px;
     }
     footer{
         padding: 10px;
@@ -848,6 +849,7 @@ footer .social-icons i:hover{
     }
     .about-us .right-box .arrow{
         display: none;
+        width: 20px;
     }
     .about-us .left-box .arrow{
         position: absolute;
@@ -856,6 +858,7 @@ footer .social-icons i:hover{
         left: 0px;
     }
 }
+
 /* about us section css end */
 
 
@@ -935,12 +938,14 @@ footer .social-icons i:hover{
     align-items: center;
     box-shadow: var(--shadow);
     border-radius: 4px;
+    min-height: 300px;
     padding: 30px 15px;
     flex-direction: column;
 }
 .our-services .box h4{
     font-size: 22px;
     margin-top: 20px;
+    text-align: center;
     font-family: var(--head-font);
 }
 .our-services .box p{
@@ -1073,9 +1078,6 @@ footer .social-icons i:hover{
     }
 }
 /* faq section css end */
-
-
-
 
 
 
@@ -1327,16 +1329,12 @@ footer .social-icons i:hover{
 .cta-section .right-box .email-box i{
     color: var(--red);
     font-size: 18px;
-    margin-right: 20px;
-    margin-left: 10px;
 }
 .cta-section .right-box .email-box .button{
     padding: 6px 20px;
-    margin-left: 15px;
-    margin-right:5px;
 }
 .cta-section .right-box .email-box input{
-    width: 200px;
+    width: 50%;
     border: none;
     outline: none;
 }
@@ -1359,24 +1357,153 @@ footer .social-icons i:hover{
     .cta-section .right-box .email-box{
         width: 100%;
     }
-    .cta-section .right-box .email-box .input{
-        width: 50%;
-    }
-    .cta-section .right-box .email-box i{
-        margin: 0;
-        width: 10%;
-    }
     .cta-section .right-box .email-box .button{
         margin: 0;
-        width: 35%;
-        padding: 5px 8px !important;
+        padding: 5px !important;
     }
 }
 /* cta section css start  */
 
-
-
-
-
-
 /* --------------------------  About page section css start -----------------------------  */
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------- contact section css start ---------------------------------- */
+.contact-section{
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.contact-section .left-box{
+    padding: 10px 50px;
+    position: relative;
+}
+.contact-section .dots{
+    position: absolute;
+    top: 20px;
+    opacity: 0.3;
+    left: -15px;
+}
+.contact-section .left-box .star{
+    position: absolute;
+    right: 40px;
+    opacity: 0.4;
+    bottom: -50px;
+}
+.contact-section .left-box span{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.contact-section .left-box h1{
+    font-size: 80px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-family: var(--head-font);
+}
+.contact-section .left-box input{
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid rgb(143, 143, 143);
+    margin-bottom: 28px;
+    padding: 8px;
+    padding-top: 5px;
+}
+.contact-section .right-box{
+    background: var(--gray);
+    padding: 35px 60px;
+    box-shadow: var(--sm-shadow);
+    position: relative;
+}
+.contact-section .left-box .key{
+    position: absolute;
+    right: 15px;
+    opacity: 0.6;
+    top: 35px;
+}
+.contact-section .right-box h5{
+    font-synthesis: 25px;
+    font-family: var(--head-font);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.contact-section .right-box p{
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+.contact-section .right-box a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 8px;
+}
+.contact-section .right-box a::after{
+    content: '';
+    background: url('right-top.png');
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    right: -20px;
+    top: 2px;
+}
+.contact-section .right-box .map{
+    font-weight: bold;
+}
+
+
+
+
+
+.sm-section{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.sm-section h4{
+    font-size: 20px;
+    font-family: var(--head-font);
+    position: relative;
+}
+.sm-section h4::before{
+    content: '▶';
+    width: 108%;
+    height: 100%;
+    position: absolute;
+    left: 105%;
+    top: 30px;
+}
+.sm-section h4::after{
+    content: '';
+    width: 105%;
+    margin-top: 20px;
+    height: 100%;
+    border-bottom: 1px solid black;
+    display: block;
+}
+.sm-section .right-box .box{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid var(--red);
+    flex-direction: column;
+}
+.sm-section .right-box .box h5{
+    font-size: 30px;
+    font-weight: bold;
+}
+.sm-section .right-box .box p{
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+/* --------------------------------- contact section css end ---------------------------------- */
