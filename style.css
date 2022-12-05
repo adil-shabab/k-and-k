@@ -178,7 +178,12 @@ li{
 .btn{
     outline: none;
 }
-
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background: var(--red);
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: -7px;
+}
 
 
 
@@ -1828,7 +1833,10 @@ footer .social-icons i:hover{
 .content-section h4{
     font-family: var(--head-font);
     font-size: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+}
+.content-section p.para{
+    font-weight: bold;
 }
 .content-section p{
     margin: 0px;
@@ -1844,7 +1852,9 @@ footer .social-icons i:hover{
     align-items: center;
     margin-bottom: 10px;
 }
-
+.content-section .right-box .innerad img{
+    border-radius: 15px;
+}
 
 
 
@@ -1852,7 +1862,7 @@ footer .social-icons i:hover{
     margin: 105px;
 }
 .related-properties h4{
-    font-size: 28px;
+    font-size: 30px;
     margin-left: 25px;
     font-family: var(--head-font);
     margin-bottom: 25px;
