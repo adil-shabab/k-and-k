@@ -145,7 +145,7 @@ li{
     padding: 3px 8px;
     height: 37px;
     border-radius: 3px;
-    border: 0.2px solid var(--gray);
+    border: 0.2px solid rgb(225, 224, 224);
     outline: none;
 }
 #r input[type="radio"] {
@@ -1671,5 +1671,31 @@ footer .social-icons i:hover{
     width: 100%;
     border-radius: 3px;
     height: 43px;
+}
+
+
+.searched-properties a{
+    text-decoration: none;
+    color: var(--black);
+}
+.searched-properties a:hover{
+    color: black;
+}
+.no-match h4{
+    font-family: var(--head-font);
+    font-size: 30px;
+}
+.no-match h4 span{
+    font-family: var(--head-font);
+    color: var(--red);
+}
+@media screen and (max-width: 992px) {
+    .search-section{
+        padding-top: 25px;
+    }
+    .search-section .search-box{
+        padding: 30px 20px;
+        padding-bottom: 45px;
+    }
 }
 /* ------------------------------------------ search section css end ----------------------------------------  */
