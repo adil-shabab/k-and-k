@@ -1823,6 +1823,32 @@ footer .social-icons i:hover{
 .single-property .right-box .whatsapp:hover{
     color: rgb(5, 87, 5);
 }
+@media screen and (max-width: 992px) {
+    .single-property .right-box .rent-buy{
+        margin-top: 20px;
+    }
+    .single-property .right-box{
+        padding: 0px 0px;
+    }
+    .single-property .right-box .property-name{
+        font-size: 23px;
+    }
+    .single-property .right-box .call{
+        width: 45%;
+    }
+    .single-property .right-box .whatsapp{
+        width: 45%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px){
+    .single-property .right-box .call{
+        width: 32%;
+    }
+    .single-property .right-box .whatsapp{
+        width: 32%;
+    }
+	
+}
 
 
 
@@ -1856,15 +1882,26 @@ footer .social-icons i:hover{
     border-radius: 15px;
 }
 
-
-
 .related-properties{
-    margin: 105px;
+    margin-top: 105px;
 }
 .related-properties h4{
     font-size: 30px;
     margin-left: 25px;
     font-family: var(--head-font);
     margin-bottom: 25px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .content-section .right-box .innerad img{
+        border-radius: 0px;
+        margin-top: 20px;
+    }
+    .related-properties h4{
+        text-align: center;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
 }
 /* ------------------------------------------ Buy / Rent / International / Premium / Standard / Featured css end ---------------------------------- */
