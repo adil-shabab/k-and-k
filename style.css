@@ -445,7 +445,14 @@ li{
 .featured-properties a:hover{
     color: black;
 }
-
+.property-box a{
+    color: black;
+    text-decoration: none;
+}
+.property-box a:hover{
+    color: black;
+    text-decoration: none;
+}
 .property-box .img-box{
     position: relative;
 }
@@ -1795,7 +1802,7 @@ footer .social-icons i:hover{
 }
 .single-property .right-box .furnished-type{
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
     font-size: 17px;
 }
 .single-property .right-box .call{
@@ -1810,5 +1817,44 @@ footer .social-icons i:hover{
 }
 .single-property .right-box .whatsapp:hover{
     color: rgb(5, 87, 5);
+}
+
+
+
+
+.content-section{
+    margin-top: 40px;
+}
+.content-section h4{
+    font-family: var(--head-font);
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.content-section p{
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.content-section .left-box img{
+    margin-right: 15px;
+    width: 35px;
+}
+.content-section .left-box .amenities-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+.related-properties{
+    margin: 105px;
+}
+.related-properties h4{
+    font-size: 28px;
+    margin-left: 25px;
+    font-family: var(--head-font);
+    margin-bottom: 25px;
 }
 /* ------------------------------------------ Buy / Rent / International / Premium / Standard / Featured css end ---------------------------------- */
