@@ -1785,5 +1785,30 @@ footer .social-icons i:hover{
 }
 .single-property .right-box .type{
     font-size: 17px;
+    margin-bottom: 8px;
+}
+.single-property .right-box .enquire{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.single-property .right-box .furnished-type{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+.single-property .right-box .call{
+    margin-right: 10px;
+    width: 30%;
+}
+.single-property .right-box .whatsapp{
+    width: 30%;
+    padding: 4px;
+    background: rgb(5, 87, 5);
+    border: 1px solid rgb(5, 87, 5);
+}
+.single-property .right-box .whatsapp:hover{
+    color: rgb(5, 87, 5);
 }
 /* ------------------------------------------ Buy / Rent / International / Premium / Standard / Featured css end ---------------------------------- */
