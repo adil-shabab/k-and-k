@@ -1699,3 +1699,26 @@ footer .social-icons i:hover{
     }
 }
 /* ------------------------------------------ search section css end ----------------------------------------  */
+
+
+
+
+
+
+/* ------------------------------------------ Buy / Rent / International / Premium / Standard / Featured css start ---------------------------------- */
+.property-section .heading{
+    font-family: var(--head-font);
+    font-size: 32px;
+}
+.property-section .heading span{
+    color: var(--red);
+    font-family: var(--head-font);
+}
+.sample-section a{
+    color: var(--black);
+    text-decoration: none;
+}
+.sample-section a:hover{
+    color: black;
+}
+/* ------------------------------------------ Buy / Rent / International / Premium / Standard / Featured css end ---------------------------------- */
