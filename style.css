@@ -1721,4 +1721,69 @@ footer .social-icons i:hover{
 .sample-section a:hover{
     color: black;
 }
+.single-property{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single-property .smallImg{
+    width: 18%;
+    cursor: pointer;
+}
+.single-property .property-slider{
+    max-width: 100%;
+    overflow: hidden;
+}
+.single-property .mainImg{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.single-property .right-box{
+    padding: 0px 15px;
+}
+.single-property .right-box .rent-buy{
+    color: var(--red);
+    font-weight: bold;
+    font-size: 20px;
+    width: fit-content;
+}
+.single-property .right-box .property-name{
+    font-family: var(--head-font);
+    font-size: 32px;
+}
+.single-property .right-box .location i{
+    color: var(--red);
+    margin-right: 8px;
+    margin-top: 10px;
+}
+.single-property .right-box .price{
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-property .right-box .bedroom,
+.single-property .right-box .bathroom,
+.single-property .right-box .area{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: var(--sm-shadow);
+    width: 100%;
+    padding: 10px 20px;
+}
+.single-property .right-box .bedroom img,
+.single-property .right-box .area img,
+.single-property .right-box .bathroom img{
+    width: 28px;
+}
+.single-property .right-box .bedroom p,
+.single-property .right-box .bathroom p,
+.single-property .right-box .area p{
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+.single-property .right-box .type{
+    font-size: 17px;
+}
 /* ------------------------------------------ Buy / Rent / International / Premium / Standard / Featured css end ---------------------------------- */
