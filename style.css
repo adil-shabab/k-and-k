@@ -491,14 +491,15 @@ li{
     height: 100%;
     width: 100%;
 }
-.property-box .box .ref-id{
+.property-box .box .buy-rent{
     position: absolute;
     top: 30px;
-    border-radius: 6px;
+    border-radius: 3px;
     font-weight: bold;
     z-index: 1;
     font-size: 14px;
     right: 30px;
+    color: var(--red);
     background-color: var(--white);
     padding: 6px 15px;
 }
@@ -508,9 +509,13 @@ li{
 .property-box .box .location{
     margin-bottom: 10px;
 }
+.property-box .box .location i{
+    color: var(--red);
+}
 .property-box .box .price{
     font-size: 18px;
     font-weight: bold;
+    color: var(--red);
 }
 .property-box .box .icon{
     width: 24px;
@@ -525,6 +530,13 @@ li{
     padding: 15px;
     padding-bottom: 20px;
     position: relative;
+}
+.property-box .box .txt-section .ref-id{
+    position: absolute;
+    transform: rotate(270deg);
+    right: -25px;
+    bottom: 25px;
+    font-size: 14px;
 }
 /* owl css  */
 .img-box .owl-nav.disabled+.owl-dots{
@@ -1749,8 +1761,6 @@ footer .social-icons i:hover{
 }
 .single-property .mainImg{
     width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
 }
 .single-property .right-box{
     padding: 0px 15px;
