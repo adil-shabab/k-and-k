@@ -1223,7 +1223,7 @@ footer .social-icons i:hover{
 }
 
 .testimonial-section .slick-prev{
-    background-image: url("left-arrow.png");
+    background-image: url("../img/left-arrow.png");
     background-size: contain;
     background-size: 15px;
     background-position: center;
@@ -1236,7 +1236,7 @@ footer .social-icons i:hover{
     right: 80px;
 }
 .testimonial-section .slick-next{
-    background-image: url("right-arrow.png");
+    background-image: url("../img/right-arrow.png");
     background-size: 15px;
     background-repeat: no-repeat;
     width: 30px !important;
@@ -1251,7 +1251,7 @@ footer .social-icons i:hover{
     opacity: -1;
 }
 .testimonial-section .slick-prev:hover, .slick-prev:focus{
-    background-image: url("left-arrow.png");
+    background-image: url("../img/left-arrow.png");
     background-size: contain;
     background-size: 15px;
     background-position: center;
@@ -1264,7 +1264,7 @@ footer .social-icons i:hover{
     right: 80px;
 }
 .testimonial-section .slick-next:hover, .slick-next:focus{
-    background-image: url("right-arrow.png");
+    background-image: url("../img/right-arrow.png");
     background-size: 15px;
     background-repeat: no-repeat;
     width: 30px !important;
@@ -1472,7 +1472,7 @@ footer .social-icons i:hover{
 }
 .contact-section .right-box a::after{
     content: '';
-    background: url('right-top.png');
+    background: url('../img/right-top.png');
     width: 16px;
     height: 16px;
     display: block;
