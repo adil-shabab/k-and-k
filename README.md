@@ -1,6 +1,5 @@
-# k-and-k
 
-
+KNK Properties Front-End
 
 ![image](https://user-images.githubusercontent.com/101416092/205625792-1af43c7a-ca05-4492-be95-3427c043d0e8.png)
 ![image](https://user-images.githubusercontent.com/101416092/205625923-f5dd571d-ec11-4d9d-8153-109d19691e70.png)
