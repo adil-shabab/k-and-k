@@ -569,12 +569,10 @@ li{
 
 /* first ad css start  */
 .ad-one.flex-container{
-    display: flex;
     justify-content: center;
     flex-wrap: nowrap;
 }
 .flex-container{
-    display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
